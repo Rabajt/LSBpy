@@ -40,7 +40,7 @@ def write_text(text_to_write, image_size):
     return imgtext
 
 
-def encode_image(text_to_encode, tempimg="images/zamek.png"):
+def encode_image(text_to_encode, tempimg="images/mario.png"):
 
     tempimg = Image.open(tempimg)
     redtemp, greentemp, bluetemp = tempimg.split()[0], tempimg.split()[1], tempimg.split()[2]
@@ -64,5 +64,5 @@ def encode_image(text_to_encode, tempimg="images/zamek.png"):
     encoded_image.save("images/encoded_sample.png")
 
 
-decode_image()
-encode_image("To jest zamek taki!")
+decode_image()  # Zakomentować tą linijkę jeśli odpala się pierwszy raz, w celu utworzenia obrazka zakodowanego
+encode_image("To jest Mario!")
