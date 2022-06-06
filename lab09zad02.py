@@ -64,5 +64,5 @@ def encode_image(text_to_encode, tempimg="images/mario.png"):
     encoded_image.save("images/encoded_sample.png")
 
 
-decode_image()  # Zakomentować tą linijkę jeśli odpala się pierwszy raz, w celu utworzenia obrazka zakodowanego
+decode_image()  # Zakomentować tę linijkę jeśli odpala się pierwszy raz, w celu utworzenia obrazka zakodowanego
 encode_image("To jest Mario!")
